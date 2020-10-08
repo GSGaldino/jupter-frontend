@@ -18,7 +18,7 @@ export default function Novo() {
       return alert('A data de entrega não pode ser menor que hoje!')
     }
 
-    const response = await fetch(`${process.env.BACKEND_URL}/api/v1/pedidos`, { 
+    const response = await fetch(`https://jupter-frontend.vercel.app/api/v1/pedidos`, { 
       method: "POST", 
       body: JSON.stringify({ 
           produto_pedido: produto, 
