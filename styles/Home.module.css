@@ -1,122 +1,88 @@
-.container {
+.container{
+  background: #dcdce62a;
   min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header{
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,.15);
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header h1{
+  color: #333;
+  font-size: 20px;
 }
 
-.footer img {
-  margin-left: 0.5rem;
+.pedidos{
+  width: 70%;
+  margin: 40px auto;
+  height: 500px;
+  text-align: center;
+  border: 2px solid #dcdce6;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,.15);
+  background: #fff;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.pedidos input{
+  margin: 20px auto;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.pesquisa{
+  text-align: center;
+  padding: 0px 20px;
+  position: relative;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
+.pesquisa a{
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 20px;
   text-decoration: underline;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.pedidosHead{
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+  position: relative;
+  padding: 0px 20px;
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+.pedidosHead svg{
+  display: block;
+  cursor: pointer;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.pedidosHead svg:hover{
+  fill: #6eb5FF;
 }
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.metadata{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 2px solid #dcdce6;
+  border-top: 2px solid #dcdce6;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.pedidos h2{
+  color: #333;
+  padding: 10px;
+  border-bottom: 2px solid #dcdce6;
 }
 
-.logo {
-  height: 1em;
+.pedido{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  color: #333;
+  font-weight: 500;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.pedido:hover{
+  background: #6eb5FF;
+  cursor: pointer;
 }

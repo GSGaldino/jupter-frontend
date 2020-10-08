@@ -1,0 +1,23 @@
+.pedido{
+  background: #dcdce62a;
+  min-height: 100vh;
+}
+
+.box{
+  width: 70%;
+  margin: 40px auto;
+  height: 500px;
+  text-align: center;
+  border: 2px solid #dcdce6;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,.15);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box p{
+  margin: 20px auto;
+}
