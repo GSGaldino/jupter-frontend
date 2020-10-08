@@ -54,7 +54,7 @@ export default function Home({ pedidos }) {
 }
 
 export const getStaticProps = async () => {
-  const response = await fetch('http://localhost:5000/api/v1/pedidos');
+  const response = await fetch(`${process.env.BACKEND_URL}/api/v1/pedidos`);
   const pedidos = await response.json();
 
   return {

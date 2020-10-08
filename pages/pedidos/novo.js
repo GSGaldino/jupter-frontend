@@ -18,19 +18,13 @@ export default function Novo() {
       return alert('A data de entrega não pode ser menor que hoje!')
     }
 
-    const response = await fetch("http://localhost:5000/api/v1/pedidos", { 
-      
-      // Adding method type 
+    const response = await fetch(`${process.env.BACKEND_URL}/api/v1/pedidos`, { 
       method: "POST", 
-        
-      // Adding body or contents to send 
       body: JSON.stringify({ 
           produto_pedido: produto, 
           data_pedido: agora, 
           data_entrega: entrega 
       }), 
-        
-      // Adding headers to the request 
       headers: { 
           "Content-type": "application/json; charset=UTF-8"
       } 
